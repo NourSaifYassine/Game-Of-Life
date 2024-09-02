@@ -14,3 +14,6 @@ Custom requirements:
 
 ## Tech Stacks
 Front-end and Back-end
+
+## Tasks
+Anthony ---- Event
