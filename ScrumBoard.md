@@ -16,4 +16,4 @@ Custom requirements:
 Front-end and Back-end
 
 ## Tasks
-Anthony ---- Event
+Anthony (and maybe Saad to) ---- making addEventListeners within 
