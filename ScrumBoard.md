@@ -1,6 +1,8 @@
 # Notes of functionalities
 
 ## Basic rules on paper
+Requirements:
+    1. Container
 
 ## Background Video
 Custom requirements:
