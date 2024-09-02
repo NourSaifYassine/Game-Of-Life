@@ -9,7 +9,9 @@
 }
 
 .container{
-    color: black;
+    width: 50vw;
+    height: 50vh;
+    border: solid black 3px;
 }
 
 .box {
