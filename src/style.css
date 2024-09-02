@@ -17,7 +17,7 @@ body {
     margin-top: 25vh;
 }
 
-.container{
+#gameCanvas{
     width: 50vw;
     height: 50vh;
     border: solid black 3px;
