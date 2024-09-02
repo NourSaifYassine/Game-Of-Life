@@ -9,3 +9,6 @@ Custom requirements:
     1. Transparent
     2. On the blocks
     3. Onclick function for the boxes
+
+## Tech Stacks
+Front-end and Back-end
