@@ -8,6 +8,13 @@
     text-decoration: none;
 }
 
+body {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    margin-top: 25vh;
+}
+
 .container{
     width: 50vw;
     height: 50vh;
@@ -15,5 +22,5 @@
 }
 
 .box {
-    color: black;
+    background-color: grey;
 }
