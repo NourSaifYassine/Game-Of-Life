@@ -8,6 +8,9 @@
     text-decoration: none;
 }
 
+<<<<<<< HEAD
+
+=======
 body {
     background-color: aliceblue;
     display: flex;
@@ -28,3 +31,4 @@ body {
     width: 40px;
     height: 40px;
 }
+>>>>>>> 8ad362bf7349f7cb7e98e351c0bc6f5b4757e162

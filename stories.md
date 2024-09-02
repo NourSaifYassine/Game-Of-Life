@@ -1,3 +1,19 @@
+<<<<<<< HEAD
+
+
+
+
+
+
+
+
+
+
+
+
+User story 2: 
+As a player, I want alive cells to be transparent so I can see the video through them.
+=======
 # Stories
 Target Audience:
     - Loves Games
@@ -13,7 +29,11 @@ As a player I want to be able to have random blocks that contain a condition so 
 As a player, i want the alive cell to be transparent, so i can see the video through them.
 
 ## Story 3
+<<<<<<< HEAD
 As a player, i want to be able to start, pause and restart the simulation, so i can explore different patterns.
 
 ## Story 4 
 As a player i want to have an explanation for the game, so i can play the game as requierd.
+=======
+>>>>>>> 8ad362bf7349f7cb7e98e351c0bc6f5b4757e162
+>>>>>>> 0fa255a72dcd1b973807f00c7493989b3a7029a7
