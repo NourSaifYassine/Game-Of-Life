@@ -23,7 +23,7 @@ body {
     border: solid black 3px;
 }
 
-.box {
+#box {
     background-color: grey;
     width: 40px;
     height: 40px;
