@@ -71,7 +71,6 @@ function init() {
                 cells[y][x] = ALIVE;
                 break;
             }
-<<<<<<< HEAD
           } while (true);
         }
         draw();
@@ -79,16 +78,3 @@ function init() {
       }
 
       init();
-
-      function myFunction() {
-        document.getElementById("start").innerHTML = "Hello Nour";
-      }
-=======
-        } while (true);
-    }
-    draw();
-    setInterval(newGeneration, 100);
-}
-
-init();
->>>>>>> e3cf3eeb85f3c7c2dfb4b8d5d25224224c21a6a1
