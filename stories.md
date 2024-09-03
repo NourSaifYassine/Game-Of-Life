@@ -7,7 +7,7 @@ Target Audience:
     - Enjoys simulations
 
 ## Story 1
-As a player I want to be able to have random blocks that contain a condition so I can play with my own style.
+As a player I want to be able to have random blocks that contain a condition so I can play. 
 
 ## Story 2
 As a player, i want the alive cell to be transparent, so i can see the video through them.
