@@ -12,7 +12,7 @@ body {
     background-color: aliceblue;
     display: flex;
     justify-content: center;
-
+    flex-direction: column;
     margin-top: 7vh;
 }
 
@@ -27,3 +27,8 @@ body {
   .empty {
     background-color: white;
   }
+
+  #start {
+    width: 40px;
+  }
+

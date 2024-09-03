@@ -74,7 +74,11 @@ let size = 50;
           } while (true);
         }
         draw();
-        setInterval(newGeneration, 100);
+        setInterval(newGeneration, 1);
       }
 
       init();
+
+      function myFunction() {
+        document.getElementById("start").innerHTML = "Hello Nour";
+      }
