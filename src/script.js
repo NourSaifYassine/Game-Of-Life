@@ -3,6 +3,7 @@ let htmlElements;
 let cells;
 let EMPTY = 0;
 let ALIVE = 1;
+let isRunning = true;
 
 function createField() {
     htmlElements = [];
@@ -71,14 +72,14 @@ function init() {
                 cells[y][x] = ALIVE;
                 break;
             }
-          } while (true);
-        }
-        draw();
-        setInterval(newGeneration, 1);
-      }
+        } while (isRunning);
+    }
+    draw();
+    setInterval(newGeneration, 100);
+}
 
-      init();
+function resetGame() {
+    clearInterval()
+}
 
-      function myFunction() {
-        document.getElementById("start").innerHTML = "Hello ";
-      }
+init();
