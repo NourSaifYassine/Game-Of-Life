@@ -75,7 +75,7 @@ function init() {
         } while (isRunning);
     }
     draw();
-    setInterval(newGeneration, 1);
+    setInterval(newGeneration, 100);
 }
 
 init();
