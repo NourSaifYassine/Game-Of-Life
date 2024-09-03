@@ -3,6 +3,7 @@
 ## Basic rules on paper
 Requirements:
     1. Container
+    2. Boxes
 
 ## Background Video
 Custom requirements:

@@ -17,14 +17,14 @@ body {
     margin-top: 25vh;
 }
 
-#gameCanvas{
-    width: 50vw;
-    height: 50vh;
-    border: solid black 3px;
-}
-
-#box {
-    background-color: grey;
-    width: 40px;
-    height: 40px;
-}
+.cell {
+    width: 8px;
+    height: 8px;
+    border: 1px;
+  }
+  .filled {
+    background-color: black;
+  }
+  .empty {
+    background-color: white;
+  }
