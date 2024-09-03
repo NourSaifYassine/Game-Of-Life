@@ -71,24 +71,19 @@ function init() {
                 cells[y][x] = ALIVE;
                 break;
             }
-<<<<<<< HEAD
-          } while (true);
-        }
-        draw();
-        setInterval(newGeneration, 1);
-      }
-
-      init();
-
-      function myFunction() {
-        document.getElementById("start").innerHTML = "Hello Nour";
-      }
-=======
         } while (true);
     }
     draw();
-    setInterval(newGeneration, 100);
+    setInterval(newGeneration, 1);
 }
 
 init();
->>>>>>> e3cf3eeb85f3c7c2dfb4b8d5d25224224c21a6a1
+
+function resetField() {
+    let start = document.getElementById("start").innerHTML = "Hello ";
+
+}
+
+function playGame() {
+    intervalId = setTimeout(computeNextGrid, 0);
+}

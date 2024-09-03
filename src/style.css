@@ -28,13 +28,8 @@ body {
 
 .empty {
     background-color: white;
-<<<<<<< HEAD
-  }
-
-  #start {
-    width: 40px;
-  }
-
-=======
 }
->>>>>>> e3cf3eeb85f3c7c2dfb4b8d5d25224224c21a6a1
+
+#start {
+    width: 40px;
+}
