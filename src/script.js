@@ -3,7 +3,8 @@ let htmlElements;
 let cells;
 let EMPTY = 0;
 let ALIVE = 1;
-let isRunning = true;
+let isRunning = false;
+let intervalId;
 
 function createField() {
     htmlElements = [];
@@ -20,16 +21,16 @@ function createField() {
             tdElements.push(td);
             tr.appendChild(td);
 
-            td.addEventListener('click', function() {
-              toggleCellState(x, y);
+            td.addEventListener('click', function () {
+                toggleCellState(x, y);
             });
         }
     }
 }
 
 function toggleCellState(x, y) {
-  cells[y][x] = cells[y][x] == ALIVE ? EMPTY : ALIVE;
-  draw();
+    cells[y][x] = cells[y][x] == ALIVE ? EMPTY : ALIVE;
+    draw();
 };
 
 function draw() {
@@ -84,11 +85,19 @@ function init() {
         } while (isRunning);
     }
     draw();
-    setInterval(newGeneration, 100);
+
 }
 
 init();
 
-function playGame() {
-    intervalId = setTimeout(computeNextGrid, 0);
+function myFunction() {
+    if (!isRunning) {
+        isRunning = true;
+        intervalId = setInterval(newGeneration, 100);
+    }
+}
+
+function stopGame() {
+    isRunning = false;
+    clearInterval(intervalId);
 }

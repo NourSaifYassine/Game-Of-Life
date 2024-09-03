@@ -8,37 +8,26 @@
     text-decoration: none;
 }
 
-body {
-    background-color: aliceblue;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 7vh;
-}
-
 .cell {
-    width: 8px;
+    width: 20px;
     height: 8px;
-    border: 1px;
+
 }
 
-.filled {
+#field {
     background-color: black;
+    display: flex;
+    flex-direction: column;
 }
 
 .empty {
     background-color: white;
-<<<<<<< HEAD
 }
 
-#start {
-    width: 40px;
+button {
+    width: 90px;
 }
-=======
-  }
 
-  #start {
-    width: 40px;
-  }
-
->>>>>>> Jafar
+body {
+    background-color: rgb(88, 88, 116);
+}
