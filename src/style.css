@@ -20,15 +20,21 @@ body {
     width: 8px;
     height: 8px;
     border: 1px;
-  }
-  .filled {
+}
+
+.filled {
     background-color: black;
-  }
-  .empty {
+}
+
+.empty {
     background-color: white;
+<<<<<<< HEAD
   }
 
   #start {
     width: 40px;
   }
 
+=======
+}
+>>>>>>> e3cf3eeb85f3c7c2dfb4b8d5d25224224c21a6a1
