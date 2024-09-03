@@ -28,8 +28,17 @@ body {
 
 .empty {
     background-color: white;
+<<<<<<< HEAD
 }
 
 #start {
     width: 40px;
 }
+=======
+  }
+
+  #start {
+    width: 40px;
+  }
+
+>>>>>>> Jafar
