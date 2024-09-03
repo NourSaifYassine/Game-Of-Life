@@ -1,21 +1,21 @@
-var size = 50;
-      var htmlElements;
-      var cells;
-      var EMPTY = 0;
-      var ALIVE = 1;
+let size = 50;
+      let htmlElements;
+      let cells;
+      let EMPTY = 0;
+      let ALIVE = 1;
 
       function createField() {
         htmlElements = [];
         cells = [];
-        var table = document.getElementById('field');
-        for (var y = 0; y < size; y++) {
-          var tr = document.createElement('tr');
-          var tdElements = [];
+        let table = document.getElementById('field');
+        for (let y = 0; y < size; y++) {
+          let tr = document.createElement('tr');
+          let tdElements = [];
           cells.push(new Array(size).fill(EMPTY));
           htmlElements.push(tdElements);
           table.appendChild(tr);
-          for (var x = 0; x < size; x++) {
-            var td = document.createElement('td');
+          for (let x = 0; x < size; x++) {
+            let td = document.createElement('td');
             tdElements.push(td);
             tr.appendChild(td);
           }
@@ -23,18 +23,18 @@ var size = 50;
       }
 
       function draw() {
-        for (var y = 0; y < size; y++) {
-          for (var x = 0; x < size; x++) {
+        for (let y = 0; y < size; y++) {
+          for (let x = 0; x < size; x++) {
             htmlElements[y][x].setAttribute('class', 'cell ' + (cells[y][x] == 1 ? 'filled' : 'empty'));
           }
         }
       }
 
       function countNeibhours(x, y) {
-        var count = 0;
+        let count = 0;
         for (dy = -1; dy <= 1; dy++) {
           for (dx = -1; dx <= 1; dx++) {
-            var nx = (x + dx + size) % size, ny = (y + dy + size) % size;
+            let nx = (x + dx + size) % size, ny = (y + dy + size) % size;
             count = count + cells[ny][nx];
           }
         }
@@ -42,13 +42,13 @@ var size = 50;
       }
 
       function newGeneration() {
-        var newCells = [];
-        for (var i = 0; i < size; i++) {
+        let newCells = [];
+        for (let i = 0; i < size; i++) {
           newCells.push(new Array(size).fill(EMPTY));
         }
-        for (var y = 0; y < size; y++) {
-          for (var x = 0; x < size; x++) {
-            var neibhours = countNeibhours(x, y);
+        for (let y = 0; y < size; y++) {
+          for (let x = 0; x < size; x++) {
+            let neibhours = countNeibhours(x, y);
             if (cells[y][x] == EMPTY && neibhours == 3) {
               newCells[y][x] = ALIVE;
             }
@@ -63,8 +63,8 @@ var size = 50;
 
       function init() {
         createField();
-        for (var i = 0; i < Math.floor(size * size * 0.3); i++) {
-          var x, y;
+        for (let i = 0; i < Math.floor(size * size * 0.3); i++) {
+          let x, y;
           do {
             x = Math.floor(Math.random() * size), y = Math.floor(Math.random() * size);
             if (cells[y][x] == EMPTY) {
