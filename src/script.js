@@ -71,10 +71,14 @@ function init() {
                 cells[y][x] = ALIVE;
                 break;
             }
-        } while (true);
-    }
-    draw();
-    setInterval(newGeneration, 100);
-}
+          } while (true);
+        }
+        draw();
+        setInterval(newGeneration, 1);
+      }
 
-init();
+      init();
+
+      function myFunction() {
+        document.getElementById("start").innerHTML = "Hello ";
+      }
