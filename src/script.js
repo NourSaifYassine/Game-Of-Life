@@ -18,9 +18,18 @@ function createField() {
             let td = document.createElement('td');
             tdElements.push(td);
             tr.appendChild(td);
+
+            td.addEventListener('click', function() {
+              toggleCellState(x, y);
+            });
         }
     }
 }
+
+function toggleCellState(x, y) {
+  cells[y][x] = cells[y][x] == ALIVE ? EMPTY : ALIVE;
+  draw();
+};
 
 function draw() {
     for (let y = 0; y < size; y++) {
@@ -74,7 +83,8 @@ function init() {
           } while (true);
         }
         draw();
-        setInterval(newGeneration, 1);
+        setInterval(newGeneration, 200);
       }
 
       init();
+    
