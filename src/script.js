@@ -114,8 +114,14 @@ restart.addEventListener('click', () => {
 
 function clearField() {
   for (let y = 0; y < size; y++) {
-    for (let x = 0; x < size; x++) {
-        htmlElements[y][x].setAttribute('class', 'cell ' + (cells[y][x] == 1 ? 'empty' : 'empty'));
-    }
+      for (let x = 0; x < size; x++) {
+          cells[y][x] = EMPTY;
+      }
+  }
+  draw();
+
+  stopGame();
 }
-}
+
+
+
