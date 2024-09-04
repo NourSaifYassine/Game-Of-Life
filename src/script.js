@@ -101,3 +101,4 @@ function stopGame() {
     isRunning = false;
     clearInterval(intervalId);
 }
+
