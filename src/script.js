@@ -11,6 +11,8 @@ let tr = document.createElement('tr');
 let td = document.createElement('td');
 let table = document.querySelector('table');
 
+init();
+clearField();
 
 function createField() {
     htmlElements = [];
@@ -25,7 +27,6 @@ function createField() {
             let td = document.createElement('td');
             tdElements.push(td);
             tr.appendChild(td);
-
             td.addEventListener('click', function () {
                 toggleCellState(x, y);
             });
@@ -79,21 +80,8 @@ function newGeneration() {
 
 function init() {
     createField();
-    for (let i = 0; i < Math.floor(size * size * 0.3); i++) {
-        let x, y;
-        do {
-            x = Math.floor(Math.random() * size), y = Math.floor(Math.random() * size);
-            if (cells[y][x] == EMPTY) {
-                cells[y][x] = ALIVE;
-                break;
-            }
-        } while (isRunning);
-    }
     draw();
-
 }
-
-init();
 
 function myFunction() {
     if (!isRunning) {
@@ -114,8 +102,22 @@ restart.addEventListener('click', () => {
 
 function clearField() {
     for (let y = 0; y < size; y++) {
-      for (let x = 0; x < size; x++) {
-          htmlElements[y][x].setAttribute('class', 'cell ' + (cells[y][x] == 1 ? 'empty' : 'empty'));
-      }
-  }
-  }
+        for (let x = 0; x < size; x++) {
+            htmlElements[y][x].setAttribute('class', 'cell ' + (cells[y][x] == 1 ? 'empty' : 'empty'));
+        }
+    }
+}
+
+function randomize() {
+    for (let i = 0; i < Math.floor(size * size * 0.3); i++) {
+        let x, y;
+        do {
+            x = Math.floor(Math.random() * size), y = Math.floor(Math.random() * size);
+            if (cells[y][x] == EMPTY) {
+                cells[y][x] = ALIVE;
+                break;
+            }
+        } while (isRunning);
+    }
+    draw();
+}
