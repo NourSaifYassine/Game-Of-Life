@@ -101,23 +101,12 @@ restart.addEventListener('click', () => {
 });
 
 function clearField() {
-    for (let y = 0; y < size; y++) {
-        for (let x = 0; x < size; x++) {
-            htmlElements[y][x].setAttribute('class', 'cell ' + (cells[y][x] == 1 ? 'empty' : 'empty'));
-        }
-    }
-}
+  for (let y = 0; y < size; y++) {
+      for (let x = 0; x < size; x++) {
+          cells[y][x] = EMPTY;
+      }
+  }
+  draw();
 
-function randomize() {
-    for (let i = 0; i < Math.floor(size * size * 0.3); i++) {
-        let x, y;
-        do {
-            x = Math.floor(Math.random() * size), y = Math.floor(Math.random() * size);
-            if (cells[y][x] == EMPTY) {
-                cells[y][x] = ALIVE;
-                break;
-            }
-        } while (isRunning);
-    }
-    draw();
+  stopGame();
 }
