@@ -5,17 +5,22 @@ let EMPTY = 0;
 let ALIVE = 1;
 let isRunning = false;
 let intervalId;
+let startBtn = document.getElementById('start');
+let field = document.getElementById('field');
+let tr = document.createElement('tr');
+let td = document.createElement('td');
+let table = document.querySelector('table');
+
 
 function createField() {
     htmlElements = [];
     cells = [];
-    let table = document.getElementById('field');
     for (let y = 0; y < size; y++) {
         let tr = document.createElement('tr');
         let tdElements = [];
         cells.push(new Array(size).fill(EMPTY));
         htmlElements.push(tdElements);
-        table.appendChild(tr);
+        field.appendChild(tr);
         for (let x = 0; x < size; x++) {
             let td = document.createElement('td');
             tdElements.push(td);
@@ -101,3 +106,8 @@ function stopGame() {
     isRunning = false;
     clearInterval(intervalId);
 }
+
+let restart = document.getElementById('restart');
+restart.addEventListener('click', () => {
+    location.reload();
+});
