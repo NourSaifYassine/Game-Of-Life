@@ -103,9 +103,10 @@ restart.addEventListener('click', () => {
 function clearField() {
     for (let y = 0; y < size; y++) {
         for (let x = 0; x < size; x++) {
-            htmlElements[y][x].setAttribute('class', 'cell ' + (cells[y][x] == 1 ? 'empty' : 'empty'));
+            cells[y][x] = EMPTY;
         }
     }
+    draw();
 }
 
 function randomize() {
@@ -120,4 +121,6 @@ function randomize() {
         } while (isRunning);
     }
     draw();
+
+    stopGame();
 }
