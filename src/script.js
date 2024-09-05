@@ -108,6 +108,7 @@ function clearField() {
         }
     }
     draw();
+    stopGame();
 }
 
 function randomize() {
