@@ -23,6 +23,14 @@ letterPatterns['K'] = [
     [ALIVE, EMPTY, EMPTY, ALIVE]
 ];
 
+letterPatterns['A'] = [
+  [EMPTY, ALIVE, ALIVE, EMPTY],
+  [ALIVE, EMPTY, EMPTY, ALIVE],
+  [ALIVE, EMPTY, EMPTY, ALIVE],
+  [ALIVE, ALIVE, ALIVE, ALIVE],
+  [ALIVE, EMPTY, EMPTY, ALIVE]
+];
+
 letterPatterns['B'] = [
     [ALIVE, ALIVE, EMPTY],
     [ALIVE, EMPTY, ALIVE],
@@ -31,7 +39,197 @@ letterPatterns['B'] = [
     [ALIVE, ALIVE, EMPTY]
 ];
 
+letterPatterns['C'] = [
+  [EMPTY, ALIVE, ALIVE, ALIVE],
+  [ALIVE, EMPTY, EMPTY, EMPTY],
+  [ALIVE, EMPTY, EMPTY, EMPTY],
+  [ALIVE, EMPTY, EMPTY, EMPTY],
+  [EMPTY, ALIVE, ALIVE, ALIVE]
+];
 
+letterPatterns['D'] = [
+  [ALIVE, ALIVE, ALIVE, EMPTY],
+  [ALIVE, EMPTY, EMPTY, ALIVE],
+  [ALIVE, EMPTY, EMPTY, ALIVE],
+  [ALIVE, EMPTY, EMPTY, ALIVE],
+  [ALIVE, ALIVE, ALIVE, EMPTY]
+];
+
+letterPatterns['E'] = [
+  [ALIVE, ALIVE, ALIVE, ALIVE],
+  [ALIVE, EMPTY, EMPTY, EMPTY],
+  [ALIVE, ALIVE, ALIVE, ALIVE],
+  [ALIVE, EMPTY, EMPTY, EMPTY],
+  [ALIVE, ALIVE, ALIVE, ALIVE]
+];
+
+letterPatterns['F'] = [
+  [ALIVE, ALIVE, ALIVE, ALIVE],
+  [ALIVE, EMPTY, EMPTY, EMPTY],
+  [ALIVE, ALIVE, ALIVE, ALIVE],
+  [ALIVE, EMPTY, EMPTY, EMPTY],
+  [ALIVE, EMPTY, EMPTY, EMPTY]
+];
+
+letterPatterns['G'] = [
+  [EMPTY, ALIVE, ALIVE, ALIVE],
+  [ALIVE, EMPTY, EMPTY, EMPTY],
+  [ALIVE, EMPTY, ALIVE, ALIVE],
+  [ALIVE, EMPTY, EMPTY, ALIVE],
+  [EMPTY, ALIVE, ALIVE, ALIVE]
+];
+
+letterPatterns['H'] = [
+  [ALIVE, EMPTY, EMPTY, ALIVE],
+  [ALIVE, EMPTY, EMPTY, ALIVE],
+  [ALIVE, ALIVE, ALIVE, ALIVE],
+  [ALIVE, EMPTY, EMPTY, ALIVE],
+  [ALIVE, EMPTY, EMPTY, ALIVE]
+];
+
+letterPatterns['I'] = [
+  [ALIVE, ALIVE, ALIVE],
+  [EMPTY, ALIVE, EMPTY],
+  [EMPTY, ALIVE, EMPTY],
+  [EMPTY, ALIVE, EMPTY],
+  [ALIVE, ALIVE, ALIVE]
+];
+
+letterPatterns['J'] = [
+  [EMPTY, EMPTY, ALIVE, ALIVE],
+  [EMPTY, EMPTY, EMPTY, ALIVE],
+  [EMPTY, EMPTY, EMPTY, ALIVE],
+  [ALIVE, EMPTY, EMPTY, ALIVE],
+  [EMPTY, ALIVE, ALIVE, EMPTY]
+];
+
+letterPatterns['K'] = [
+  [ALIVE, EMPTY, EMPTY, ALIVE],
+  [ALIVE, EMPTY, ALIVE, EMPTY],
+  [ALIVE, ALIVE, EMPTY, EMPTY],
+  [ALIVE, EMPTY, ALIVE, EMPTY],
+  [ALIVE, EMPTY, EMPTY, ALIVE]
+];
+
+letterPatterns['L'] = [
+  [ALIVE, EMPTY, EMPTY, EMPTY],
+  [ALIVE, EMPTY, EMPTY, EMPTY],
+  [ALIVE, EMPTY, EMPTY, EMPTY],
+  [ALIVE, EMPTY, EMPTY, EMPTY],
+  [ALIVE, ALIVE, ALIVE, ALIVE]
+];
+
+letterPatterns['M'] = [
+  [ALIVE, EMPTY, ALIVE, EMPTY, ALIVE],
+  [ALIVE, ALIVE, EMPTY, ALIVE, ALIVE],
+  [ALIVE, EMPTY, EMPTY, EMPTY, ALIVE],
+  [ALIVE, EMPTY, EMPTY, EMPTY, ALIVE],
+  [ALIVE, EMPTY, EMPTY, EMPTY, ALIVE]
+];
+
+letterPatterns['N'] = [
+  [ALIVE, EMPTY, EMPTY, ALIVE],
+  [ALIVE, ALIVE, EMPTY, ALIVE],
+  [ALIVE, EMPTY, ALIVE, ALIVE],
+  [ALIVE, EMPTY, EMPTY, ALIVE],
+  [ALIVE, EMPTY, EMPTY, ALIVE]
+];
+
+letterPatterns['O'] = [
+  [EMPTY, ALIVE, ALIVE, EMPTY],
+  [ALIVE, EMPTY, EMPTY, ALIVE],
+  [ALIVE, EMPTY, EMPTY, ALIVE],
+  [ALIVE, EMPTY, EMPTY, ALIVE],
+  [EMPTY, ALIVE, ALIVE, EMPTY]
+];
+
+letterPatterns['P'] = [
+  [ALIVE, ALIVE, ALIVE, EMPTY],
+  [ALIVE, EMPTY, EMPTY, ALIVE],
+  [ALIVE, ALIVE, ALIVE, EMPTY],
+  [ALIVE, EMPTY, EMPTY, EMPTY],
+  [ALIVE, EMPTY, EMPTY, EMPTY]
+];
+
+letterPatterns['Q'] = [
+  [EMPTY, ALIVE, ALIVE, EMPTY],
+  [ALIVE, EMPTY, EMPTY, ALIVE],
+  [ALIVE, EMPTY, EMPTY, ALIVE],
+  [ALIVE, EMPTY, ALIVE, EMPTY],
+  [EMPTY, ALIVE, ALIVE, ALIVE]
+];
+
+letterPatterns['R'] = [
+  [ALIVE, ALIVE, ALIVE, EMPTY],
+  [ALIVE, EMPTY, EMPTY, ALIVE],
+  [ALIVE, ALIVE, ALIVE, EMPTY],
+  [ALIVE, EMPTY, ALIVE, EMPTY],
+  [ALIVE, EMPTY, EMPTY, ALIVE]
+];
+
+letterPatterns['S'] = [
+  [EMPTY, ALIVE, ALIVE, ALIVE],
+  [ALIVE, EMPTY, EMPTY, EMPTY],
+  [EMPTY, ALIVE, ALIVE, EMPTY],
+  [EMPTY, EMPTY, EMPTY, ALIVE],
+  [ALIVE, ALIVE, ALIVE, EMPTY]
+];
+
+letterPatterns['T'] = [
+  [ALIVE, ALIVE, ALIVE, ALIVE],
+  [EMPTY, EMPTY, ALIVE, EMPTY],
+  [EMPTY, EMPTY, ALIVE, EMPTY],
+  [EMPTY, EMPTY, ALIVE, EMPTY],
+  [EMPTY, EMPTY, ALIVE, EMPTY]
+];
+
+letterPatterns['U'] = [
+  [ALIVE, EMPTY, EMPTY, ALIVE],
+  [ALIVE, EMPTY, EMPTY, ALIVE],
+  [ALIVE, EMPTY, EMPTY, ALIVE],
+  [ALIVE, EMPTY, EMPTY, ALIVE],
+  [EMPTY, ALIVE, ALIVE, EMPTY]
+];
+
+letterPatterns['V'] = [
+  [ALIVE, EMPTY, EMPTY, ALIVE],
+  [ALIVE, EMPTY, EMPTY, ALIVE],
+  [ALIVE, EMPTY, EMPTY, ALIVE],
+  [EMPTY, ALIVE, ALIVE, EMPTY],
+  [EMPTY, EMPTY, ALIVE, EMPTY]
+];
+
+letterPatterns['W'] = [
+  [ALIVE, EMPTY, EMPTY, ALIVE],
+  [ALIVE, EMPTY, EMPTY, ALIVE],
+  [ALIVE, EMPTY, ALIVE, ALIVE],
+  [ALIVE, ALIVE, EMPTY, ALIVE],
+  [ALIVE, EMPTY, EMPTY, ALIVE]
+];
+
+letterPatterns['X'] = [
+  [ALIVE, EMPTY, EMPTY, ALIVE],
+  [EMPTY, ALIVE, ALIVE, EMPTY],
+  [EMPTY, EMPTY, EMPTY, EMPTY],
+  [EMPTY, ALIVE, ALIVE, EMPTY],
+  [ALIVE, EMPTY, EMPTY, ALIVE]
+];
+
+letterPatterns['Y'] = [
+  [ALIVE, EMPTY, EMPTY, ALIVE],
+  [EMPTY, ALIVE, ALIVE, EMPTY],
+  [EMPTY, EMPTY, ALIVE, EMPTY],
+  [EMPTY, EMPTY, ALIVE, EMPTY],
+  [EMPTY, EMPTY, ALIVE, EMPTY]
+];
+
+letterPatterns['Z'] = [
+  [ALIVE, ALIVE, ALIVE, ALIVE],
+  [EMPTY, EMPTY, EMPTY, ALIVE],
+  [EMPTY, ALIVE, ALIVE, EMPTY],
+  [ALIVE, EMPTY, EMPTY, EMPTY],
+  [ALIVE, ALIVE, ALIVE, ALIVE]
+];
 
 function createField() {
     htmlElements = [];
@@ -181,11 +379,15 @@ function insertPattern(pattern, startX, startY) {
 // });
 
 document.addEventListener('keydown', function (event) {
-  if (event.key.toUpperCase() === 'K') {
+  const key = event.key.toUpperCase(); // Get the uppercase version of the key pressed
+  
+  // Check if a pattern exists for the pressed key
+  if (letterPatterns[key]) {
       const cellX = Number(pageX.innerText); 
       const cellY = Number(pageY.innerText); 
 
-      insertPattern(letterPatterns['K'], cellX, cellY);
+      // Insert the pattern dynamically based on the pressed key
+      insertPattern(letterPatterns[key], cellX, cellY);
   }
 });
 
