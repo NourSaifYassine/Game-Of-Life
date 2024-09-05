@@ -29,6 +29,7 @@ function createField() {
             tr.appendChild(td);
             td.addEventListener('click', function () {
                 toggleCellState(x, y);
+                td.setAttribute('id', `cell${x}`);
             });
         }
     }
