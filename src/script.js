@@ -41,12 +41,15 @@ function toggleCellState(x, y) {
 };
 
 function draw() {
+    let selectedColor = document.getElementById("colorcell").value; 
     for (let y = 0; y < size; y++) {
         for (let x = 0; x < size; x++) {
             htmlElements[y][x].setAttribute('class', 'cell ' + (cells[y][x] == 1 ? 'filled' : 'empty'));
+            htmlElements[y][x].style.backgroundColor = cells[y][x] == ALIVE ? selectedColor : 'white'; 
         }
     }
 }
+
 
 function countNeibhours(x, y) {
     let count = 0;
