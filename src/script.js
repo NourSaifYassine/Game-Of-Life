@@ -121,6 +121,40 @@ function randomize() {
         } while (isRunning);
     }
     draw();
-
     stopGame();
 }
+
+function changeColor() {
+    var color = document.getElementById("colorPick").value;
+    document.body.style.backgroundColor = color;
+}
+
+function changeBackgroundColor() {
+    var color = document.getElementById("colorPick").value;
+    document.body.style.backgroundColor = color;
+}
+
+
+// cells change color
+let selectedColor = document.getElementById("colorcell").value;
+
+function cellscolor() {
+    for (let y = 0; y < size; y++) {
+        for (let x = 0; x < size; x++) {
+            if (cells[y][x] == ALIVE) {
+                tdElements[y][x].style.backgroundColor = selectedColor; 
+            } else {
+                tdElements[y][x].style.backgroundColor = 'white'; 
+            }
+        }
+    }
+}
+
+const explain = document.getElementById("label");
+
+let showorhide = function () {
+    explain.style.display = 'none';
+}    
+   
+
+
