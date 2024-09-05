@@ -10,9 +10,18 @@ let field = document.getElementById('field');
 let tr = document.createElement('tr');
 let td = document.createElement('td');
 let table = document.querySelector('table');
+let letterPatterns = {}; 
 
 init();
 clearField();
+
+letterPatterns['K'] = [
+    [ALIVE, EMPTY, EMPTY, ALIVE],
+    [ALIVE, EMPTY, ALIVE, EMPTY],
+    [ALIVE, ALIVE, EMPTY, EMPTY],
+    [ALIVE, EMPTY, ALIVE, EMPTY],
+    [ALIVE, EMPTY, EMPTY, ALIVE]
+];
 
 function createField() {
     htmlElements = [];
@@ -38,7 +47,7 @@ function createField() {
 function toggleCellState(x, y) {
     cells[y][x] = cells[y][x] == ALIVE ? EMPTY : ALIVE;
     draw();
-};
+}
 
 function draw() {
     for (let y = 0; y < size; y++) {
@@ -96,11 +105,6 @@ function stopGame() {
     clearInterval(intervalId);
 }
 
-let restart = document.getElementById('restart');
-restart.addEventListener('click', () => {
-    location.reload();
-});
-
 function clearField() {
     for (let y = 0; y < size; y++) {
         for (let x = 0; x < size; x++) {
@@ -108,6 +112,7 @@ function clearField() {
         }
     }
     draw();
+    stopGame();
 }
 
 function randomize() {
@@ -122,6 +127,38 @@ function randomize() {
         } while (isRunning);
     }
     draw();
-
     stopGame();
 }
+
+function countAliveAndDeadCells() {
+    let aliveCount = 0;
+    let deadCount = 0;
+    for (let y = 0; y < size; y++) {
+        for (let x = 0; x < size; x++) {
+            if (cells[y][x] == ALIVE) {
+                aliveCount++;
+            } else {
+                deadCount++;
+            }
+        }
+    }
+    console.log(`Alive: ${aliveCount}, Dead: ${deadCount}`);
+    return { aliveCount, deadCount };
+}
+
+function insertPattern(pattern, startX, startY) {
+    for (let y = 0; y < pattern.length; y++) {
+        for (let x = 0; x < pattern[y].length; x++) {
+            if (startY + y < size && startX + x < size) {
+                cells[startY + y][startX + x] = pattern[y][x];
+            }
+        }
+    }
+    draw();
+}
+
+document.addEventListener('keydown', function (event) {
+    if (event.key.toUpperCase() === 'K') {
+        insertPattern(letterPatterns['K'], 10, 10);
+    }
+});
