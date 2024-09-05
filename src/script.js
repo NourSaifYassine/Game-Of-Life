@@ -15,6 +15,7 @@ let letterPatterns = {};
 init();
 clearField();
 
+
 letterPatterns['K'] = [
     [ALIVE, EMPTY, EMPTY, ALIVE],
     [ALIVE, EMPTY, ALIVE, EMPTY],
@@ -365,28 +366,13 @@ function insertPattern(pattern, startX, startY) {
     draw();
 }
 
-// document.addEventListener('keydown', function (event) {
-//     if (event.key.toUpperCase() === 'K') {
-//         insertPattern(letterPatterns['K'], 10, 10);
-//     }
-// });
-
-// document.addEventListener('keydown', function (event) {
-//   for (let i = 2; i < x;)
-//   if (event.key.toUpperCase() === 'K') {
-//       insertPattern(letterPatterns['K'], 10, 10);
-//   }
-// });
-
 document.addEventListener('keydown', function (event) {
-  const key = event.key.toUpperCase(); // Get the uppercase version of the key pressed
+  const key = event.key.toUpperCase();
   
-  // Check if a pattern exists for the pressed key
   if (letterPatterns[key]) {
       const cellX = Number(pageX.innerText); 
       const cellY = Number(pageY.innerText); 
 
-      // Insert the pattern dynamically based on the pressed key
       insertPattern(letterPatterns[key], cellX, cellY);
   }
 });
@@ -406,7 +392,3 @@ cellField.addEventListener("mousemove", function (event) {
   pageX.innerText = cellX; 
   pageY.innerText = cellY;
 }, false);
-
-
-
-
