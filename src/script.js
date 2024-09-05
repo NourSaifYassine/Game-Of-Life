@@ -29,6 +29,7 @@ function createField() {
             tr.appendChild(td);
             td.addEventListener('click', function () {
                 toggleCellState(x, y);
+                td.setAttribute('id', `cell${x}`);
             });
         }
     }
@@ -95,11 +96,6 @@ function stopGame() {
     clearInterval(intervalId);
 }
 
-let restart = document.getElementById('restart');
-restart.addEventListener('click', () => {
-    location.reload();
-});
-
 function clearField() {
     for (let y = 0; y < size; y++) {
         for (let x = 0; x < size; x++) {
@@ -107,6 +103,7 @@ function clearField() {
         }
     }
     draw();
+    stopGame();
 }
 
 function randomize() {
