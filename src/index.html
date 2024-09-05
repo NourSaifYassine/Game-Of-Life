@@ -12,12 +12,21 @@
 <body>
   <h1><span style="margin-right: 20px;" id="conway">Conway's</span> Game of Life</h1>
   <div class="center">
-    <table id="field" style="border: 1px solid black " width="1000px"></table>
+    <div class="cell-field">
+      <table id="field" style="border: 1px solid black " width="1000px"></table>
+    </div>
     <button id="start" onclick="myFunction()"><i class="fa fa-play" style="color: white;" aria-hidden="true"></i> PLAY </button>
     <button id="stop" onclick="stopGame()" width="40vw"><i class="fa fa-stop" style="color: white ; margin-right: 5px;" aria-hidden="true"></i>STOP</button>
     <button id="randomize" width="40vw" onclick="randomize()"><i class="fa fa-random" aria-hidden="true" style="color: white ; margin-right: 5px;" aria-hidden="true"></i>RANDOMIZE</button>
     <button id="clearn" width="40vw" onclick="clearField()">CLEAR</button>
   </div>
+
+  <div class="box">
+    <p>Move the mouse around in the cell-field to watch its coordinates change.</p>
+    <p><code>pageX</code>: <span id="x">n/a</span></p>
+    <p><code>pageY</code>: <span id="y">n/a</span></p>
+  </div>
+  
   <script src="script.js"></script>
 </body>
 

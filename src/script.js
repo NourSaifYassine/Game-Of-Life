@@ -157,8 +157,44 @@ function insertPattern(pattern, startX, startY) {
     draw();
 }
 
+// document.addEventListener('keydown', function (event) {
+//     if (event.key.toUpperCase() === 'K') {
+//         insertPattern(letterPatterns['K'], 10, 10);
+//     }
+// });
+
+// document.addEventListener('keydown', function (event) {
+//   for (let i = 2; i < x;)
+//   if (event.key.toUpperCase() === 'K') {
+//       insertPattern(letterPatterns['K'], 10, 10);
+//   }
+// });
+
 document.addEventListener('keydown', function (event) {
-    if (event.key.toUpperCase() === 'K') {
-        insertPattern(letterPatterns['K'], 10, 10);
-    }
+  if (event.key.toUpperCase() === 'K') {
+      const cellX = Number(pageX.innerText); 
+      const cellY = Number(pageY.innerText); 
+
+      insertPattern(letterPatterns['K'], cellX, cellY);
+  }
 });
+
+const cellField = document.querySelector(".cell-field");
+const pageX = document.getElementById("x");
+const pageY = document.getElementById("y");
+
+cellField.addEventListener("mousemove", function (event) {
+  const rect = cellField.getBoundingClientRect();
+  const mouseX = event.clientX - rect.left; 
+  const mouseY = event.clientY - rect.top; 
+
+  const cellX = Math.floor((mouseX / rect.width) * size); 
+  const cellY = Math.floor((mouseY / rect.height) * size);
+
+  pageX.innerText = cellX; 
+  pageY.innerText = cellY;
+}, false);
+
+
+
+
