@@ -23,6 +23,16 @@ letterPatterns['K'] = [
     [ALIVE, EMPTY, EMPTY, ALIVE]
 ];
 
+letterPatterns['B'] = [
+    [ALIVE, ALIVE, EMPTY],
+    [ALIVE, EMPTY, ALIVE],
+    [ALIVE, ALIVE, ALIVE],
+    [ALIVE, EMPTY, ALIVE],
+    [ALIVE, ALIVE, EMPTY]
+];
+
+
+
 function createField() {
     htmlElements = [];
     cells = [];
@@ -160,5 +170,11 @@ function insertPattern(pattern, startX, startY) {
 document.addEventListener('keydown', function (event) {
     if (event.key.toUpperCase() === 'K') {
         insertPattern(letterPatterns['K'], 10, 10);
+    }
+});
+
+document.addEventListener('keydown', function (event) {
+    if (event.key.toUpperCase() === 'B') {
+        insertPattern(letterPatterns['B'], 10, 10);
     }
 });
