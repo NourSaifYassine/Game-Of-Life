@@ -23,6 +23,16 @@ letterPatterns['K'] = [
     [ALIVE, EMPTY, EMPTY, ALIVE]
 ];
 
+letterPatterns['B'] = [
+    [ALIVE, ALIVE, EMPTY],
+    [ALIVE, EMPTY, ALIVE],
+    [ALIVE, ALIVE, ALIVE],
+    [ALIVE, EMPTY, ALIVE],
+    [ALIVE, ALIVE, EMPTY]
+];
+
+
+
 function createField() {
     htmlElements = [];
     cells = [];
