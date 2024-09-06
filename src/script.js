@@ -352,8 +352,6 @@ function changeBackgroundColor() {
     document.body.style.backgroundColor = color;
 }
 
-
-// cells change color
 let selectedColor = document.getElementById("colorcell").value;
 
 function cellscolor() {
