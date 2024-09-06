@@ -347,10 +347,6 @@ function changeColor() {
   document.body.style.backgroundColor = color;
 }
 
-function changeBackgroundColor() {
-  var color = document.getElementById("colorPick").value;
-  document.body.style.backgroundColor = color;
-}
 
 let selectedColor = document.getElementById("colorcell").value;
 
