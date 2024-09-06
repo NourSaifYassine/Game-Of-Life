@@ -36,7 +36,6 @@ Features:
     1.2 After the letter is pressed it takes the right array associated with and generates the letterKey with the associated.
     1.3. Capable of locating the mouse inside the table location
     2. Change colors all cells in the HTML table.
-    3. Capable changing the background-color.
     4. Capable randomizing all cells in the HTML table.
     5. Capable of clearing the screen.
     6. Capable of playing the game by the rules.
