@@ -45,6 +45,10 @@ button {
 
 body {
     background-color: rgb(88, 88, 116);
+    background-image: url(https://i.ytimg.com/vi/qnE9j1LzSu0/maxresdefault.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
 }
 
 .center {
@@ -59,7 +63,7 @@ h1 {
     justify-content: center;
     font-size: 45px;
     margin-top: 40px;
-    color: whitesmoke;
+    color: rgb(255, 255, 255);
     font-family: "Press Start 2P", system-ui;
     font-weight: 400;
     font-style: normal;
@@ -70,6 +74,7 @@ h1 {
     font-family: "Press Start 2P", system-ui;
     font-weight: 400;
     font-style: normal;
+    color: rgb(191, 133, 229);
 }
 
 #label {
