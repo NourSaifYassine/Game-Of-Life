@@ -45,3 +45,6 @@ Features:
 Rules: 
     1. If one cell has 2-3 living neighbourcells then it will stay alive and dead otherwise so it then is non-existent.
     2. If a dead cell with 3 other cells are alive then another comes back to life otherwise it stays dead.
+
+## Quick notice
+Still in depelopment... might not be responisive yet.
