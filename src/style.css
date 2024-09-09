@@ -6,6 +6,16 @@
     font-style: normal;
 }
 
+.buttons {
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+span {
+    text-align: center;
+}
+
 * {
     color: black;
     box-sizing: border-box;
@@ -24,8 +34,9 @@
 
 #field {
     margin-top: 10%;
-    background-color: black;
     display: flex;
+    margin-left: 7vw;
+    width: 100%;
     flex-direction: column;
 }
 
@@ -45,7 +56,6 @@ button {
 
 body {
     background-color: rgb(88, 88, 116);
-    background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
@@ -60,12 +70,18 @@ body {
 h1 {
     display: flex;
     justify-content: center;
-    font-size: 45px;
-    margin-top: 40px;
+    font-size: 35px;
     color: rgb(255, 255, 255);
     font-family: "Press Start 2P", system-ui;
     font-weight: 400;
+    margin-top: 50px;
+    text-align: center;
+    width: 100vw;
     font-style: normal;
+}
+
+.celColor{
+    margin-top: 30px;
 }
 
 #conway {
@@ -88,5 +104,29 @@ h1 {
 @media (max-width: 768px) {
     .column {
         width: 100vw;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    #field {
+        width: 97.5%;
+    }
+    .center {
+        display: flex;
+        flex-direction: column;
+    }
+    .cell {
+        height: 10px;
+    }
+    .center {
+        position: absolute;
+        top: 50vh;
+        left: 50vw;
+        transform: translate(0%, -50%);
+    }
+    .buttons {
+        position: absolute;
+        width: 100%;
+        top: -90px;
     }
 }

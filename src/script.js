@@ -1,4 +1,9 @@
 let size = 50;
+
+if (document.body.style.width = `${1024}px`) {
+  size = 30;
+}
+
 let htmlElements;
 let cells;
 let EMPTY = 0;
