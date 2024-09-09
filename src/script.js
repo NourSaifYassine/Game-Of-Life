@@ -1,9 +1,3 @@
-let size = 50;
-
-if (document.body.style.maxWidth = `${1024}px`) {
-  size = 30;
-}
-
 let htmlElements;
 let cells;
 let EMPTY = 0;
@@ -16,6 +10,7 @@ let tr = document.createElement('tr');
 let td = document.createElement('td');
 let table = document.querySelector('table');
 let letterPatterns = {};
+let size = 34;
 
 init();
 clearField();
