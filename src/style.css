@@ -45,10 +45,9 @@ button {
 
 body {
     background-color: rgb(88, 88, 116);
-    background-image: url(https://i.ytimg.com/vi/qnE9j1LzSu0/maxresdefault.jpg);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .center {
