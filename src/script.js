@@ -1,6 +1,6 @@
 let size = 50;
 
-if (document.body.style.width = `${1024}px`) {
+if (document.body.style.maxWidth = `${1024}px`) {
   size = 30;
 }
 

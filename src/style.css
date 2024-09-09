@@ -122,11 +122,11 @@ h1 {
         position: absolute;
         top: 50vh;
         left: 50vw;
-        transform: translate(0%, -50%);
     }
     .buttons {
         position: absolute;
         width: 100%;
-        top: -90px;
+        margin-top: -60px;
+        margin-left: 60px;
     }
 }
